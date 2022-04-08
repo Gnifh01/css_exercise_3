@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: #ccc;
+}
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 3rem;
+  margin-top: 25rem;
+}
+
+#container .grid-calculator {
+  display: grid;
+  grid-auto-columns: 1fr;
+  width: 40rem;
+  grid-template-areas:
+    "input input input input"
+    "addizione sottrazione moltiplicazione divisione"
+    "sette otto nove uguale"
+    "quattro cinque sei uguale"
+    "uno due tre uguale"
+    "ziro punto ac uguale";
+}
+
+#container .grid-calculator .elemento input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  text-align: end;
+  font-size: 3rem;
+  outline: none;
+  background-color: #424c52;
+  color: #fff;
+  padding: 0rem 1rem;
+}
+
+#container .grid-calculator .elemento input::placeholder {
+  color: #fff;
+}
+
+#container .grid-calculator .elemento input::-webkit-outer-spin-button,
+#container .grid-calculator .elemento input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.elemento {
+  background: #eff3f5;
+  padding: 2rem;
+  text-align: center;
+  border: 2px solid #7d93a5;
+  font-size: 2.5rem;
+}
+
+.elemento:nth-child(1) {
+  grid-area: input;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #424c52;
+  border: none;
+}
+.elemento:nth-child(2) {
+  grid-area: addizione;
+  background-color: #d3dce4;
+  border-left: none;
+}
+.elemento:nth-child(3) {
+  grid-area: sottrazione;
+  background-color: #d3dce4;
+}
+.elemento:nth-child(4) {
+  grid-area: moltiplicazione;
+  background-color: #d3dce4;
+}
+.elemento:nth-child(5) {
+  grid-area: divisione;
+  background-color: #d3dce4;
+  border-right: none;
+}
+.elemento:nth-child(6) {
+  grid-area: sette;
+  border-left: none;
+}
+.elemento:nth-child(7) {
+  grid-area: otto;
+}
+.elemento:nth-child(8) {
+  grid-area: nove;
+}
+.elemento:nth-child(9) {
+  grid-area: quattro;
+  border-left: none;
+  border-left: none;
+}
+.elemento:nth-child(10) {
+  grid-area: cinque;
+}
+.elemento:nth-child(11) {
+  grid-area: sei;
+}
+.elemento:nth-child(12) {
+  grid-area: uno;
+  border-left: none;
+}
+.elemento:nth-child(13) {
+  grid-area: due;
+}
+.elemento:nth-child(14) {
+  grid-area: tre;
+}
+.elemento:nth-child(15) {
+  grid-area: ziro;
+  border-bottom-left-radius: 10px;
+  border-left: none;
+  border-bottom: none;
+}
+.elemento:nth-child(16) {
+  grid-area: punto;
+  border-bottom: none;
+}
+.elemento:nth-child(17) {
+  grid-area: ac;
+  border-bottom: none;
+}
+.elemento:nth-child(18) {
+  grid-area: uguale;
+  padding-top: 13.3rem;
+  border-bottom-right-radius: 10px;
+  background-color: #f77077;
+  border-bottom: none;
+  border-right: none;
+}
